@@ -1,0 +1,58 @@
+#  Copyright 2018. bolaxy.org authors.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+[accountType]
+    adminType = "Admin"
+    ownerType = "Shareholder"
+[title]
+    appointAdmin = "Admin appointment notification"
+    deleteAdmin = "Admin cancellation notification"
+    authorization = "Function authorization notification"
+    nodeSwitch = "Public chain node switch notification"
+    approvalTemplateSuccess = "【{{.TemplateName}}】Approval succeeded"
+    approvalTemplateFail = "【{{.TemplateName}} Approval failed"
+    cancelTemplate = "Approval flow revoke notification"
+    transferApproved = "Transfer request approval succeeded"
+    transferReject = "Transfer request approval failed"
+    transferSuccess = "Transfer success notification"
+    transferFail = "Transfer failed"
+    transferCanceled = "Transfer application revoke notice"
+    voucherWarn = "Signature machine failure warning"
+    nodeSync = "Node synchronization notification"
+
+[content]
+    appointAdmin = "{{.AccountType}} {{.OperAccountName}} has set you up as an admin."
+    appointAdminNoticeOthers = "{{.AccountType}} {{.OperAccountName}} has set {{.PromoterAccountName}} up as an admin."
+    deleteAdmin = "{{.AccountType}} {{.OperAccountName}} has cancelled your admin rights."
+    deleteAdminNoticeOthers = "{{.AccountType}} {{.OperAccountName}} has cancelled admin rights for {{.PromoterAccountName}}."
+    authGrant = "{{.AccountType}} {{.OperAccountName}} grants you {{.AuthName}} permission."
+    authCancel = "{{.AccountType}} {{.OperAccountName}} cancels your {{.AuthName}} function permission."
+    nodeSwitch = "Dear users, your public nodes have been synchronized. The system has automatically switched from the public node to your node. Thank you for your support."
+    approvalTemplateSuccess = "The approval flow of [{{.TemplateName}}] has been approved by full vote."
+    approvalTemplateFailByVoucher = "[{{.TemplateName}}] approval flow was rejected by signature machine"
+    approvalTemplateFailByOwner = "[{{.TemplateName}}] approval flow was rejected by shareholder {{.OperAccountName}}."
+    cancelTempByOwner = "The approval flow for [{{.TemplateName}}] has been revoked, please be aware. \nOperator: {{.OperAccountName}}."
+    cancelTemp = "The approval flow for [{{.TemplateName}}] has been revoked, please be aware."
+    cancelTempByDisableUser = " The approval flow for [{{.TemplateName}}] has been revoked, please be aware. \nOperator: {{.OperAccountName}}. (automatic operation when {{.DisabledAccount}}'s account is deactivated)"
+    transferApproved = "The transfer you requested: {{.TransOrderCoinName}} {{.TransOrderAmount}} is approved."
+    transferReject = "The transfer you requested: {{.TransOrderCoinName}} {{.TransOrderAmount}}, approval failed. \nReason: the number of approvers didn't reach the minimum number required."
+    transferApprovalFaliCauseTimeOut = "The transfer request you initiated: {{.TransOrderCoinName}} {{.TransOrderAmount}},  approval failed. Reason for failure: exceeding the deadline."
+    transferSuccess = "The transfer you requested: {{.TransOrderCoinName}} {{.TransOrderAmount}}, suceeded."
+    transferPartiallySuceeded = "The transfer you requested: {{.TransOrderCoinName}} {{.TransOrderAmount}}, partially suceeded."
+    transferFail = "The transfer request you initiated: {{.TransOrderCoinName}} {{.TransOrderAmount}}, the transfer failed."
+    transferFailCauseTimeout = "The transfer request you initiated: {{.TransOrderCoinName}} {{.TransOrderAmount}}, the transfer failed. Reason for failure: exceeding the deadline."
+    transferCanceled = "The transfer request you initiated: {{.TransOrderCoinName}} {{.TransOrderAmount}}, has been revoked."
+    transferCanceledCauseDisableUser = "The transfer request you initiated: {{.TransOrderCoinName}} {{.TransOrderAmount}}, has been revoked. Reason: User account in the approval flow is disabled."
+    voucherWarn = "Dear user, the signature machine detected the data of the {{.VoucherWarnCount}} verification failures. For the security of your funds, please check the signature machine and servers."
+    nodeSyncFail = "Dear user, the system detected your node synchronous exception. If you are unable to check the cause of the exception, please contact the official customer service. During this time, there may be a delay in the account balance you have queried, but it will not affect the transfer, so please be aware."
+    nodeSyncSUccess = "Dear users, your node synchronization has returned to normal, please be aware."

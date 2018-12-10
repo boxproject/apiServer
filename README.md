@@ -13,7 +13,7 @@ keys and instructions. More Information to see [BOX Official Website](https://bo
 
 + [Features](#Features)
 + [Installation](#Installation)
-+ [Quick Start](#Quick Start)
++ [Quick Start](#QuickStart)
 + [Contributing](#Contributing)
 + [License](#License)
 
@@ -47,7 +47,7 @@ $ sh scripts/keys.sh
   - Config the wallet MySQL whith `config.yml`.
   - Modify the relevant files in the `local` directory to configure the full node.
 
-### Quick Start
+### QuickStart
 
 + Get the Source Code
 

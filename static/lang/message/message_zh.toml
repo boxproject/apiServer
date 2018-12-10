@@ -1,0 +1,58 @@
+#  Copyright 2018. bolaxy.org authors.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+[accountType]
+    adminType = "管理员"
+    ownerType = "股东"
+[title]
+    appointAdmin = "管理员任命通知"
+    deleteAdmin = "取消管理员通知"
+    authorization = "功能授权通知"
+    nodeSwitch = "公链节点切换通知"
+    approvalTemplateSuccess = "【{{.TemplateName}}】审批成功"
+    approvalTemplateFail = "【{{.TemplateName}}】审批失败"
+    cancelTemplate = "审批流作废通知"
+    transferApproved = "转账申请审批成功"
+    transferReject = "转账申请审批失败"
+    transferSuccess = "转账成功通知"
+    transferFail = "转账失败"
+    transferCanceled = "转账申请作废通知"
+    voucherWarn = "签名机验签失败警告"
+    nodeSync = "节点同步通知"
+
+[content]
+    appointAdmin = "{{.AccountType}} {{.OperAccountName}} 已将您设置为管理员。"
+    appointAdminNoticeOthers = "{{.AccountType}} {{.OperAccountName}} 已将 {{.PromoterAccountName}} 设置为管理员。"
+    deleteAdmin = "{{.AccountType}} {{.OperAccountName}} 已取消了您的管理员权限。"
+    deleteAdminNoticeOthers = "{{.AccountType}} {{.OperAccountName}} 已取消了 {{.PromoterAccountName}} 的管理员权限。"
+    authGrant = "{{.AccountType}} {{.OperAccountName}} 授予您 {{.AuthName}} 功能权限。"
+    authCancel = "{{.AccountType}} {{.OperAccountName}} 取消您的 {{.AuthName}} 功能权限"
+    nodeSwitch = "尊敬的用户，您的公链节点已同步完成。系统已自动从公共节点切换至您的公链节点。感谢您一如既往的支持。"
+    approvalTemplateSuccess = "【{{.TemplateName}}】的审批流已全票通过审核，上链成功后即可生效。"
+    approvalTemplateFailByVoucher = "【{{.TemplateName}}】的审批流由于签名机验签失败而被否决。"
+    approvalTemplateFailByOwner = "【{{.TemplateName}}】的审批流已被股东 {{.OperAccountName}} 否决。"
+    cancelTempByOwner = "【{{.TemplateName}}】的审批流已被作废，敬请知晓。\n操作人: {{.OperAccountName}}。"
+    cancelTemp = "【{{.TemplateName}}】的审批流已被作废，敬请知晓。"
+    cancelTempByDisableUser = "【{{.TemplateName}}】的审批流已被作废，敬请知晓。\n操作人: {{.OperAccountName}} (停用 {{.DisabledAccount}} 账户时系统自动操作)。"
+    transferApproved = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，已通过审批。"
+    transferReject = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，审批失败。\n失败原因：未达到最小审批通过人数。"
+    transferApprovalFaliCauseTimeOut = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，审批失败。\n失败原因：超过截至时间。"
+    transferSuccess = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，已转账成功。"
+    transferPartiallySuceeded = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，部分转账成功。"
+    transferFail = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，转账失败。"
+    transferFailCauseTimeout = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，转账失败。\n失败原因：超过截至时间。"
+    transferCanceled = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，已被作废。"
+    transferCanceledCauseDisableUser = "您发起的转账申请：{{.TransOrderCoinName}} {{.TransOrderAmount}}，已被作废。\n作废原因：审批流中的用户账户被停用。"
+    voucherWarn = "尊敬的用户，签名机检测到 {{.VoucherWarnCount}} 笔验签失败的数据。为了您的资金安全，请对签名机与服务器进行安全检查。"
+    nodeSyncFail = "尊敬的用户，系统检测到您的节点同步异常。若您无法排查异常原因，请联系官方客服。在此期间，您查询到的账户余额可能存在延迟，但不会影响转账，敬请知晓。"
+    nodeSyncSUccess = "尊敬的用户，您的节点同步功能已恢复正常，敬请知晓。"

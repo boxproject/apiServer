@@ -1,0 +1,26 @@
+#   Copyright 2018. bolaxy.org authors.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+ ownerRecovery = "{{.Operator}} 申请恢复股东账户"
+ ownerSubmit = "由股东 {{.Operator}} 扫码提交"
+ ownerAccept = "股东 {{.Operator}} 同意恢复"
+ ownerReject = "股东 {{.Operator}} 拒绝恢复"
+ templateNew = "由 {{.Operator}} 新建"
+ templateAccept = "由 {{.Operator}} 审批通过"
+ templateReject = "由 {{.Operator}} 审批拒绝"
+ templateCancel = "由 {{.Operator}} 撤销"
+ templateActive = "审批流生效"
+ voucherKeyWord = "{{.Operator}} 输入了启动关键词"
+ voucherStart = "签名机启动成功"
+ voucherStop = "签名机关停成功（操作人：{{.Operator}} ）"
+ voucherTimeout = "启动超时"
