@@ -1,0 +1,50 @@
+package: github.com/boxproject/apiServer
+import:
+- package: github.com/alecthomas/log4go
+- package: github.com/boxproject/boxwallet
+  subpackages:
+  - bccoin
+  - bccore
+  - cli
+  - errors
+  - signature
+- package: github.com/dgrijalva/jwt-go
+  version: ~3.2.0
+- package: github.com/ekyoung/gin-nice-recovery
+- package: github.com/gin-gonic/gin
+  version: ~1.3.0
+- package: github.com/go-errors/errors
+  version: ~1.0.1
+- package: github.com/go-sql-driver/mysql
+  version: ~1.4.1
+- package: github.com/golang/protobuf
+  version: ~1.2.0
+  subpackages:
+  - proto
+- package: github.com/jinzhu/gorm
+  version: ~1.9.1
+  subpackages:
+  - dialects/mysql
+- package: github.com/prometheus/common
+  subpackages:
+  - log
+- package: github.com/satori/go.uuid
+  version: ~1.2.0
+- package: github.com/shopspring/decimal
+  version: ~1.1.0
+- package: github.com/spf13/viper
+  version: ~1.2.1
+- package: github.com/theplant/batchputs
+- package: golang.org/x/net/context
+- package: google.golang.org/grpc
+  subpackages:
+  - credentials
+  - keepalive
+  - reflection
+- package: gopkg.in/urfave/cli.v1
+  version: ~1.20.0
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: ~1.6.3
+  subpackages:
+  - convey
