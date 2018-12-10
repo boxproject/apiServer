@@ -64,7 +64,7 @@ BOX（Enterprise Token Safe Box）是一个企业级数字资产保险柜应
 
 Licensed under the Apache License, Version 2.0, Copyright 2018. box.la authors.
 
-     Copyright 2018. box.la authors.
+     Copyright 2018. bolaxy.org authors.
     
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.

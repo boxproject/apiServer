@@ -82,7 +82,7 @@ Find more documentation for developers on [API.md](./docs/api.md)
 Licensed under the Apache License, Version 2.0, Copyright 2018. box.la authors.
 
 ```
- Copyright 2018. box.la authors.
+ Copyright 2018. bolaxy.org authors.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
